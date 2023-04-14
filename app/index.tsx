@@ -8,7 +8,11 @@ export default function App() {
   return (
     <Container useSafeArea>
       <Link href="/pages/home/modal">home</Link>
-      <Text fontSize={20}>App</Text>
+      <Text
+        className="text-app-text dark:text-dark-app-text bg-pink-600"
+        fontSize={100}>
+        App
+      </Text>
       <Button onPress={() => setColorScheme("dark")}>dark</Button>
       <Button
         className="bg-red-500 dark:bg-violet-950"

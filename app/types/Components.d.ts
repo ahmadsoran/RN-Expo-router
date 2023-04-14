@@ -1,6 +1,5 @@
 import { StyledProps } from "nativewind";
 import {
-  TextProps as RNPTextProps,
   ButtonProps as RNPButtonProps,
   TextInputProps as RNTextInputProps,
   IconButtonProps,
@@ -9,9 +8,10 @@ import {
   ViewProps as RNViewProps,
   TouchableOpacityProps as RNTouchableOpacityProps,
   PressableProps as RNPressableProps,
+  TextProps as RNTextProps,
 } from "react-native";
 
-export type TextProps = StyledProps<RNPTextProps> & {
+export type TextProps = StyledProps<RNTextProps> & {
   fontSize?: number;
 };
 export type ButtonProps = StyledProps<RNPButtonProps> & {

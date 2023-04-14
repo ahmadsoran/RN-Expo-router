@@ -1,13 +1,11 @@
 import React from "react";
-import Colors from "CORE/constants/Colors";
 import { SafeAreaView } from "react-native-safe-area-context";
 import {
-  StyleSheet,
   View as DefaultView,
   TextInput as DefaultTextInput,
 } from "react-native";
 import { Text as DefaultText, Button as RNPButton } from "react-native-paper";
-import { styled, useColorScheme } from "nativewind";
+import { styled } from "nativewind";
 import {
   ButtonProps,
   TextProps,
@@ -25,100 +23,50 @@ import Layout from "CORE/constants/Layout";
 const NativeWindTEXT = styled(DefaultText);
 
 export function Text(props: TextProps) {
-  const { colorScheme } = useColorScheme();
-
   return (
     <NativeWindTEXT
       {...props}
       style={[
         props.fontSize
           ? {
-              color: Colors[colorScheme].text,
               fontSize: RFValue(props.fontSize, Layout.window.height),
               includeFontPadding: false,
               textAlignVertical: "center",
             }
           : {
-              color: Colors[colorScheme].text,
               includeFontPadding: false,
               textAlignVertical: "center",
             },
 
         props.style,
       ]}
+      className="text-app-text dark:text-dark-app-text font-Poppins-Black"
+      children={props.children}
     />
   );
 }
 
 const NativeWindView = styled(DefaultView);
 export function View(props: ViewProps) {
-  return <NativeWindView style={styles.View} {...props} />;
+  return <NativeWindView className="bg-transparent" {...props} />;
 }
 
 type ContainerProps = ViewProps & {
   useSafeArea?: boolean;
 };
+
+const NativeWindSafeAreaView = styled(SafeAreaView);
 export function Container(props: ContainerProps) {
-  const { colorScheme } = useColorScheme();
-
   return props.useSafeArea ? (
-    <SafeAreaView
-      style={[
-        props.style,
-        {
-          height: "100%",
-
-          backgroundColor: Colors[colorScheme].background,
-        },
-      ]}>
+    <NativeWindSafeAreaView className="bg-app-bg dark:bg-dark-app-bg h-full">
       <View {...props}>{props.children}</View>
-    </SafeAreaView>
+    </NativeWindSafeAreaView>
   ) : (
-    <View
-      {...props}
-      style={[
-        props.style,
-        {
-          height: "100%",
-
-          backgroundColor: Colors[colorScheme].background,
-        },
-      ]}>
+    <View {...props} className="bg-app-bg dark:bg-dark-app-bg h-full">
       {props.children}
     </View>
   );
 }
-
-type CetnerProps = ViewProps & {
-  horizontal?: boolean;
-  vertical?: boolean;
-};
-
-export function Center(props: CetnerProps) {
-  const { horizontal, vertical } = props;
-
-  return (
-    <View
-      {...props}
-      style={[
-        props.style,
-        horizontal && { justifyContent: "center" },
-        vertical && { alignContent: "center" },
-        {
-          display: "flex",
-          flexDirection: "row",
-        },
-      ]}
-    />
-  );
-}
-
-const styles = StyleSheet.create({
-  View: {
-    backgroundColor: "transparent",
-    padding: 10,
-  },
-});
 
 const NativeWindTouchableOpacity = styled(DefaultTochableOpacity);
 export function TouchableOpacity(props: TouchableOpacityProps) {
