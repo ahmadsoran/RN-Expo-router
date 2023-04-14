@@ -18,24 +18,6 @@ then
 expo upgrade
 ```
 
-## **packages intigrated**
-
-- Localstorage **[MMKV](https://github.com/mrousavy/react-native-mmkv)**
-- Animations **[React-native-reanimated](https://docs.swmansion.com/react-native-reanimated/docs)**
-- Force Restart App **[React Native Restart](https://www.npmjs.com/package/react-native-restart)**
-- UI Library **[RN-Paper](https://reactnativepaper.com/)**
-- User Device Hardwear info **[react-native-device-info](https://www.npmjs.com/package/react-native-device-info)**
-- API FETCH & CHACHE **[axios](https://axios-http.com/docs/intro) , [react query](https://www.npmjs.com/package/react-query)**
-- state management **[zustand](https://github.com/pmndrs/zustand)**
-- ONAIR Update **[expo update](https://docs.expo.dev/versions/latest/sdk/updates/)**
-- Localization **[i18nnext](https://dev.to/ramonak/react-native-internationalization-with-i18next-568n)**
-- Navigations **[React navigation](https://reactnavigation.org/)**
-- validations **[zod](https://zod.dev/)**
-- React-native-gesture-handelr **[RNGH](https://www.npmjs.com/package/react-native-gesture-handler)**
-- Flashlist - Fast & performant React Native list. No more blank cells **[DOC](https://shopify.github.io/flash-list/docs)**
-- Firebase + Firebase Messaging **[DOC](https://rnfirebase.io/messaging/usage)**
-- easy grid **[doc](https://www.npmjs.com/package/react-native-easy-grid)**
-
 **useful commands**
 
 to genarate/regenarate ios & android folder
