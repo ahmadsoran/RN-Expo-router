@@ -1,8 +1,10 @@
 import "CORE/i18n/conf";
 import React from "react";
 import { Link } from "expo-router";
-import { Button, Container, Text } from "CORE/components/Themed";
 import { useColorScheme } from "nativewind";
+import { Text } from "CORE/components/Themed";
+import { Button } from "CORE/components/Themed";
+import { Container } from "CORE/components/Themed";
 export default function App() {
   const { setColorScheme } = useColorScheme();
   return (

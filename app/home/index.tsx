@@ -5,7 +5,7 @@ import { Link } from "expo-router";
 export default function HomeScreen() {
   return (
     <View>
-      <Link href="/pages/home/modal" asChild>
+      <Link href="/home/modal" asChild>
         <Text>Home</Text>
       </Link>
     </View>
