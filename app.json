@@ -1,0 +1,86 @@
+{
+  "expo": {
+    "name": "app",
+    "slug": "app",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./app/assets/images/icon.png",
+    "scheme": "app",
+    "userInterfaceStyle": "automatic",
+    "jsEngine": "hermes",
+
+    "splash": {
+      "image": "./app/assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#F7FAFC"
+    },
+    "updates": {
+      "enabled": false
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.app.app",
+      "icon": "./app/assets/images/icon.png",
+      "splash": {
+        "image": "./app/assets/images/splash.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#F7FAFC",
+        "dark": {
+          "image": "./app/assets/images/splash.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#171923"
+        }
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./app/assets/images/adaptive-icon.png",
+        "backgroundColor": "#F7FAFC"
+      },
+      "package": "com.app.app",
+      "icon": "./app/assets/images/icon.png",
+      "splash": {
+        "image": "./app/assets/images/splash.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#F7FAFC",
+        "dark": {
+          "image": "./app/assets/images/splash.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#171923"
+        }
+      }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "bf063ca4-0548-4846-a97b-8567672cd579"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "plugins": [
+      "expo-build-properties",
+      [
+        "onesignal-expo-plugin",
+        {
+          "mode": "production",
+          "devTeam": "XXXXXX"
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow app app to use your location.",
+          "locationWhenInUsePermission": "Allow Dealer app to use your location."
+        }
+      ]
+    ],
+    "extra": {
+      "oneSignalAppId": "XXXXX"
+    },
+    "experiments": {
+      "turboModules": true
+    }
+  }
+}
