@@ -7,7 +7,7 @@ import {
   TextInput as DefaultTextInput,
 } from "react-native";
 import { Text as DefaultText, Button as RNPButton } from "react-native-paper";
-import { styled } from "nativewind";
+import { styled, useColorScheme } from "nativewind";
 import {
   ButtonProps,
   TextProps,
@@ -21,12 +21,11 @@ import {
   Pressable as DefaultPressable,
 } from "react-native";
 import { RFValue } from "react-native-responsive-fontsize";
-import useColorScheme from "CORE/hooks/useColorScheme";
 import Layout from "CORE/constants/Layout";
 const NativeWindTEXT = styled(DefaultText);
 
 export function Text(props: TextProps) {
-  const colorScheme = useColorScheme();
+  const { colorScheme } = useColorScheme();
 
   return (
     <NativeWindTEXT
@@ -60,7 +59,7 @@ type ContainerProps = ViewProps & {
   useSafeArea?: boolean;
 };
 export function Container(props: ContainerProps) {
-  const colorScheme = useColorScheme();
+  const { colorScheme } = useColorScheme();
 
   return props.useSafeArea ? (
     <SafeAreaView
