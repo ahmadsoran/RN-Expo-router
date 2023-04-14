@@ -7,7 +7,7 @@ export default function App() {
   const { setColorScheme } = useColorScheme();
   return (
     <Container useSafeArea>
-      <Link href="/pages/home/modal">home</Link>
+      <Link href="/pages/home">home</Link>
       <Text
         className="text-app-text dark:text-dark-app-text bg-pink-600"
         fontSize={100}>
