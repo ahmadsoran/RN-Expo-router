@@ -5,6 +5,7 @@ import { useColorScheme } from "nativewind";
 import { Text } from "CORE/components/Themed";
 import { Button } from "CORE/components/Themed";
 import { Container } from "CORE/components/Themed";
+import Icon from "test-react-native-remix-icon";
 export default function App() {
   const { setColorScheme } = useColorScheme();
   return (
@@ -21,6 +22,7 @@ export default function App() {
         onPress={() => setColorScheme("light")}>
         light
       </Button>
+      <Icon name="AddLine" color="red" size={25} />
     </Container>
   );
 }
