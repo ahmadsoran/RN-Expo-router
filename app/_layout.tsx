@@ -3,6 +3,8 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 import { SWRConfig } from "swr";
 import { Tabs } from "expo-router";
 import useCachedResources from "CORE/hooks/useCachedResources";
+import { TamaguiProvider } from "tamagui";
+import config from "tamagui.config";
 export default function RootLayout() {
   const isLoadingComplete = useCachedResources();
 
@@ -42,16 +44,18 @@ export default function RootLayout() {
           },
         }}>
         <SafeAreaProvider>
-          <Tabs>
-            <Tabs.Screen
-              // Name of the route to hide.
-              name="index"
-              options={{
-                // This tab will no longer show up in the tab bar.
-                href: null,
-              }}
-            />
-          </Tabs>
+          <TamaguiProvider config={config}>
+            <Tabs>
+              <Tabs.Screen
+                // Name of the route to hide.
+                name="index"
+                options={{
+                  // This tab will no longer show up in the tab bar.
+                  href: null,
+                }}
+              />
+            </Tabs>
+          </TamaguiProvider>
         </SafeAreaProvider>
       </SWRConfig>
     );

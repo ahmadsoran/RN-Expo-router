@@ -8,7 +8,6 @@ module.exports = function (api) {
         plugins: [
           "react-native-reanimated/plugin",
           "transform-remove-console",
-          "nativewind/babel",
           require.resolve("expo-router/babel"),
           [
             // modele-resolver use for ability of using absloute paths
@@ -33,7 +32,6 @@ module.exports = function (api) {
         presets: ["babel-preset-expo"],
         plugins: [
           "react-native-reanimated/plugin",
-          "nativewind/babel",
           require.resolve("expo-router/babel"),
           [
             // modele-resolver use for ability of using absloute paths

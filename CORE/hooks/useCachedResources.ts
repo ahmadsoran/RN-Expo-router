@@ -1,7 +1,6 @@
 import { FontAwesome } from "@expo/vector-icons";
 import { storage } from "CORE/util/storage";
 import * as Font from "expo-font";
-import { useColorScheme } from "nativewind";
 import { useEffect, useState } from "react";
 import { ColorSchemeName } from "react-native";
 
@@ -10,11 +9,9 @@ export default function useCachedResources() {
   const StorageColorScheme = storage.getString(
     "color_scheme"
   ) as NonNullable<ColorSchemeName>;
-  const { setColorScheme } = useColorScheme();
   useEffect(() => {
     async function loadResourcesAndDataAsync() {
       try {
-        if (StorageColorScheme) setColorScheme(StorageColorScheme);
         // Load fonts
         await Font.loadAsync({
           ...FontAwesome.font,

@@ -24,8 +24,6 @@ import UserTwoIcon from "react-native-remix-icon/src/icons/User2Line";
 import UserIcon from "react-native-remix-icon/src/icons/UserLine";
 import PhoneIcon from "react-native-remix-icon/src/icons/PhoneLine";
 import DeleteBinIcon from "react-native-remix-icon/src/icons/DeleteBinLine";
-import { RFValue } from "react-native-responsive-fontsize";
-import Layout from "CORE/constants/Layout";
 export const NotificationICON = ({
   color,
   size,
@@ -33,7 +31,7 @@ export const NotificationICON = ({
   color: string;
   size: number;
 }) => {
-  size = RFValue(size, Layout.window.height);
+  size = size;
   return <NotificationIcon width={size} height={size} fill={color} />;
 };
 
@@ -44,12 +42,12 @@ export const SettingICON = ({
   color: string;
   size: number;
 }) => {
-  size = RFValue(size, Layout.window.height);
+  size = size;
   return <SettingIcon width={size} height={size} fill={color} />;
 };
 
 export const File2ICON = ({ color, size }: { color: string; size: number }) => {
-  size = RFValue(size, Layout.window.height);
+  size = size;
   return <FileTwo width={size} height={size} fill={color} />;
 };
 export const FileList2ICON = ({
@@ -59,7 +57,7 @@ export const FileList2ICON = ({
   color: string;
   size: number;
 }) => {
-  size = RFValue(size, Layout.window.height);
+  size = size;
   return <FileListTwo width={size} height={size} fill={color} />;
 };
 
@@ -70,7 +68,7 @@ export const FileList3ICON = ({
   color: string;
   size: number;
 }) => {
-  size = RFValue(size, Layout.window.height);
+  size = size;
   return <FileListThree width={size} height={size} fill={color} />;
 };
 export const ShoppingBag3ICON = ({
@@ -80,7 +78,7 @@ export const ShoppingBag3ICON = ({
   color: string;
   size: number;
 }) => {
-  size = RFValue(size, Layout.window.height);
+  size = size;
   return <ShoppingBagThree width={size} height={size} fill={color} />;
 };
 export const HistoryICON = ({
@@ -90,11 +88,11 @@ export const HistoryICON = ({
   color: string;
   size: number;
 }) => {
-  size = RFValue(size, Layout.window.height);
+  size = size;
   return <HistoryIcon width={size} height={size} fill={color} />;
 };
 export const HomeICON = ({ color, size }: { color: string; size: number }) => {
-  size = RFValue(size, Layout.window.height);
+  size = size;
   return <HomeIcon width={size} height={size} fill={color} />;
 };
 
@@ -105,7 +103,7 @@ export const CridetICON = ({
   color: string;
   size: number;
 }) => {
-  size = RFValue(size, Layout.window.height);
+  size = size;
   return <CoinsIcon width={size} height={size} fill={color} />;
 };
 export const ScratchCardICON = ({
@@ -115,11 +113,11 @@ export const ScratchCardICON = ({
   color: string;
   size: number;
 }) => {
-  size = RFValue(size, Layout.window.height);
+  size = size;
   return <BankCardTwo width={size} height={size} fill={color} />;
 };
 export const EsimICON = ({ color, size }: { color: string; size: number }) => {
-  size = RFValue(size, Layout.window.height);
+  size = size;
   return <SimCardTwoIcon width={size} height={size} fill={color} />;
 };
 export const SimCardICON = ({
@@ -129,7 +127,7 @@ export const SimCardICON = ({
   color: string;
   size: number;
 }) => {
-  size = RFValue(size, Layout.window.height);
+  size = size;
   return <SimCardIcon width={size} height={size} fill={color} />;
 };
 export const EvoucherICON = ({
@@ -139,7 +137,7 @@ export const EvoucherICON = ({
   color: string;
   size: number;
 }) => {
-  size = RFValue(size, Layout.window.height);
+  size = size;
   return <BarCodeBoxIcon width={size} height={size} fill={color} />;
 };
 export const ListUnorderedICON = ({
@@ -149,7 +147,7 @@ export const ListUnorderedICON = ({
   color: string;
   size: number;
 }) => {
-  size = RFValue(size, Layout.window.height);
+  size = size;
   return <ListUnorderedIcon width={size} height={size} fill={color} />;
 };
 export const BuildingICON = ({
@@ -159,7 +157,7 @@ export const BuildingICON = ({
   color: string;
   size: number;
 }) => {
-  size = RFValue(size, Layout.window.height);
+  size = size;
   return <BuildingIcon width={size} height={size} fill={color} />;
 };
 export const TraslateICON = ({
@@ -169,15 +167,15 @@ export const TraslateICON = ({
   color: string;
   size: number;
 }) => {
-  size = RFValue(size, Layout.window.height);
+  size = size;
   return <TranslateIcon width={size} height={size} fill={color} />;
 };
 export const EditICON = ({ color, size }: { color: string; size: number }) => {
-  size = RFValue(size, Layout.window.height);
+  size = size;
   return <EditIcon width={size} height={size} fill={color} />;
 };
 export const PaintICON = ({ color, size }: { color: string; size: number }) => {
-  size = RFValue(size, Layout.window.height);
+  size = size;
   return <PaintIcon width={size} height={size} fill={color} />;
 };
 export const FileChartICON = ({
@@ -187,7 +185,7 @@ export const FileChartICON = ({
   color: string;
   size: number;
 }) => {
-  size = RFValue(size, Layout.window.height);
+  size = size;
   return <FileChartIcon width={size} height={size} fill={color} />;
 };
 
@@ -198,7 +196,7 @@ export const ArrowGobackICON = ({
   color: string;
   size: number;
 }) => {
-  size = RFValue(size, Layout.window.height);
+  size = size;
   return <ArrowGobackIcon width={size} height={size} fill={color} />;
 };
 
@@ -209,21 +207,21 @@ export const InformationICON = ({
   color: string;
   size: number;
 }) => {
-  size = RFValue(size, Layout.window.height);
+  size = size;
   return <InformationIcon width={size} height={size} fill={color} />;
 };
 
 export const User2ICON = ({ color, size }: { color: string; size: number }) => {
-  size = RFValue(size, Layout.window.height);
+  size = size;
   return <UserTwoIcon width={size} height={size} fill={color} />;
 };
 export const UserICON = ({ color, size }: { color: string; size: number }) => {
-  size = RFValue(size, Layout.window.height);
+  size = size;
   return <UserIcon width={size} height={size} fill={color} />;
 };
 
 export const PhoneICON = ({ color, size }: { color: string; size: number }) => {
-  size = RFValue(size, Layout.window.height);
+  size = size;
   return <PhoneIcon width={size} height={size} fill={color} />;
 };
 
@@ -234,6 +232,6 @@ export const DeleteBinICON = ({
   color: string;
   size: number;
 }) => {
-  size = RFValue(size, Layout.window.height);
+  size = size;
   return <DeleteBinIcon width={size} height={size} fill={color} />;
 };
