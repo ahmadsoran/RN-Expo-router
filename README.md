@@ -69,16 +69,28 @@ Share the project's URL to an email address
 ```
 
 **install cocoapods**
-
+```command
 gem cleanup
+```
+```command
 brew uninstall cocoapods
+```
+```command
 sudo gem uninstall cocoapods
+```
+```command
 sudo gem install cocoapods -n /usr/local/bin
+```
+```command
 sudo gem install cocoapods-user-defined-build-types
+```
+```command
 pod install --repo-update
+```
 
 **MacOS apple silicon chip only**
 
 you need to install rosetta otherwise you get an error while compiling android
-
+```command
 softwareupdate --install-rosetta
+```
