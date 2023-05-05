@@ -1,6 +1,6 @@
 # React native Folder Strcture
 
-**React native cuurent version 0.70.5 note if you want upgrade packeages version must be compatible with [expo](https://docs.expo.dev/) framework**
+**React native cuurent version 0.71.6 note if you want upgrade packeages version must be compatible with [expo](https://docs.expo.dev/) framework**
 
 or
 
