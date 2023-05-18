@@ -19,7 +19,6 @@ import {
   YStack,
 } from "tamagui";
 import RNRestart from "react-native-restart";
-import { UIManager } from "react-native";
 import { I18nManager } from "react-native";
 
 export default function App() {
