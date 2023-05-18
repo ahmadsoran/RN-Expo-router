@@ -100,11 +100,7 @@ export default function App() {
         </Sheet.Frame>
       </Sheet>
       <Progress value={70} my={10} scaleX={I18nManager.isRTL ? -1 : 1}>
-        <Progress.Indicator
-          animation={"lazy"}
-          borderCurve="circular"
-          backgroundColor={"#43cd83"}
-        />
+        <Progress.Indicator animation={"lazy"} backgroundColor={"#43cd83"} />
       </Progress>
       <RadioGroup defaultValue="3" name="form">
         <YStack width={300} alignItems="center" space="$2">
