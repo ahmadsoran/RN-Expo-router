@@ -26,6 +26,20 @@ module.exports = function (api) {
               root: ["./"],
             },
           ],
+          [
+            "@tamagui/babel-plugin",
+            {
+              components: ["tamagui"],
+              config: "./tamagui.config.ts",
+              logTimings: true,
+            },
+          ],
+          [
+            "transform-inline-environment-variables",
+            {
+              include: "TAMAGUI_TARGET",
+            },
+          ],
         ],
       },
       development: {
@@ -48,6 +62,20 @@ module.exports = function (api) {
                 ".ios.tsx",
               ],
               root: ["./"],
+            },
+          ],
+          [
+            "@tamagui/babel-plugin",
+            {
+              components: ["tamagui"],
+              config: "./tamagui.config.ts",
+              logTimings: true,
+            },
+          ],
+          [
+            "transform-inline-environment-variables",
+            {
+              include: "TAMAGUI_TARGET",
             },
           ],
         ],
