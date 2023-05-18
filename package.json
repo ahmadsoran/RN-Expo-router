@@ -81,8 +81,8 @@
     "typescript": "^4.9.4"
   },
   "resolutions": {
-    "metro": "0.76.0",
-    "metro-resolver": "0.76.0"
+    "metro": "0.73.9",
+    "metro-resolver": "0.73.9"
   },
   "private": true
 }
